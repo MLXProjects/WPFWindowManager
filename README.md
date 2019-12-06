@@ -11,7 +11,7 @@ Currently only the window displaying (with nearly-live update), movement (draggi
 <b>How does this work?</b>  
 This program basically lists all opened and visible windows into a ComboBox.  
 When the user selects one of the CB's items, the program writes the window's HWND (unique window identifier) to a little textbox (which can be edited with any window's HWND) and then parses it to get an copy of the selected window. That copy is just a window's screenshot taken as a bitmap, which is displayed to the Image control associated to that window.  
-The windows are updated each 200ms, so there cam be some lag between real window input and what's displayed here.  
+The windows are updated every 200ms, so there can be some lag between real window input and what's displayed here.  
   
 <b>WARNING:</b>  
 This project has a little memory usage bug, and so if you have 2GB RAM or less I don't recommend that you try to run this with more than 2 windows open. 
